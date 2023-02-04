@@ -12,6 +12,9 @@
     border: 1px solid #ccc;
 }
 
+.card_available{
+color: black;
+}
 .card_titel{
     font-size: 16px;
     font-weight: 600;

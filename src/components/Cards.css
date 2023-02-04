@@ -15,7 +15,7 @@ h1 {
   cursor: pointer;
   font-size: 18px;
   position: relative;
-  left: 20px;
+  right: 145px;
   top: 0px;
 }
 .btn-favorite{
@@ -26,7 +26,7 @@ h1 {
   font-size: 18px;
   cursor: pointer;
   position: relative;
-  left: 20px;
+  right: 145px;
   top: 0px;
 }
 .price{
@@ -41,16 +41,33 @@ h1 {
    top: 40px; 
 }
 
+.available{
+  color: black;
+  font-size: larger;
+  background-color: gold;
+  padding: 3px;
+  width: 110px;
+  position: relative;
+   bottom: 270px; 
+}
 
+.home-input {
+  padding: 6px 200px;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  align-items:center;
+  border: 1px solid black;
+  text-align: center;
+}
+.cards_container {
+  align-items:center;
+  max-width: 100%;
+  width: 100%;
 
-
-.cards__container {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  max-width: 1120px;
-  width: 90%;
-  margin: 0 auto;
+  margin: 1px;
+  text-align: center;
+ 
 }
 
 .cards__wrapper {
@@ -58,14 +75,13 @@ h1 {
   margin: 50px 0 45px;
 }
 
-.cards__items {
-  margin-bottom: 24px;
-}
+
 
 .cards__item {
-  display: flex;
-  flex:1;
-  margin: 0 1rem;
+  
+  display:inline-flex;
+  padding: 9px;
+  width: 400px;
   border-radius: 10px;
 }
 
@@ -84,8 +100,9 @@ h1 {
 
 .cards__item__pic-wrap {
   position: relative;
-  width: 100%;
-  padding-top: 67%;
+  width:400px;
+  height: 100%;
+  padding-top:80%;
   overflow: hidden;
 }
 
@@ -135,6 +152,15 @@ h1 {
     margin-bottom: 2rem;
     
   }
+  .home-input {
+    padding: 6px 200px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    align-items:center;
+    border: 1px solid black;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 1020px) {
@@ -144,16 +170,30 @@ h1 {
     width: 100%;
 
   }
-  
+  .home-input {
+    padding: 6px 200px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    align-items:center;
+    border: 1px solid black;
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 930px) {
   .cards__items {
     display: flex;
     margin-bottom: 2rem;
-    
-
   }
-  
+  .home-input {
+    padding: 6px 200px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    align-items:center;
+    border: 1px solid black;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -161,4 +201,15 @@ h1 {
     display: flex;
     margin-bottom: 2rem;
   }
+  .home-input {
+    padding: 2px 100px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    align-items:center;
+    border: 1px solid black;
+    text-align: center;
+  }
 }
+
+

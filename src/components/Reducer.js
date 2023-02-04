@@ -30,7 +30,7 @@ const reducer = (state, action) => {
       }
       return { ...state, basket: newcart };
 
-    case "REMOVE_FROM_FAVORITE":
+      case "REMOVE_FROM_FAVORITE":
       let newfav = [...state.paket];
       const i = state.paket.findIndex(
         (paketItem) => paketItem.id === action.id

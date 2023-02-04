@@ -2,7 +2,7 @@ import React from "react";
 import { useStateValue } from "./StateProvide";
 import "./CardCart.css";
 
-function CardCart({ id, title, img, price }) {
+function CardCart({ id, title, img ,price }) {
   const [{ basket }, dispatch] = useStateValue();
 
   

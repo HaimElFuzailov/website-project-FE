@@ -9,9 +9,6 @@ import SignUp from "./components/pages/SignUp";
 import LogIn from "./components/pages/LogIn";
 
 function App() {
-  //  useEffect(()=>{
-  //   fetch('/website/user/all').then((responese)=>responese.json()).then((data)=>{console.log(data)})
-  //  },[])
 
   return (
     <>

@@ -22,8 +22,9 @@ export default function OrderList() {
           ) : (
             <div>
               <h2 className="checkout_titel2">Item In The Order Basket:</h2>
-              {basket.map((item) => (
+              {basket.map((item,index) => (
                 <CardCart
+                  key={item.id || index}
                   id={item.id}
                   title={item.title}
                   img={item.img}

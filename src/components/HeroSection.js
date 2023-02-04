@@ -10,15 +10,7 @@ function HeroSection() {
       <video src="/videos/video-1.mp4" autoPlay loop muted />
       <div className="input-areas">
         <form>
-          <input
-            className="home-input"
-            name="Search"
-            type="text"
-            placeholder="Searching area"
-          />
-          <button className="btn_search">
-            <FaSearch />
-          </button>
+        
         </form>
       </div>
     </div>
