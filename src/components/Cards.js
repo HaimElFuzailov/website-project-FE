@@ -10,7 +10,6 @@ function Cards() {
 
   useEffect(() => {
     getAllItems().then((resposne) => {
-      console.log("response");
       const items = resposne.data.map((item) => {
         const id = item.id;
         const title = item.titleOfTheItem;
@@ -20,7 +19,6 @@ function Cards() {
         return { ...item,id:id, title: title, img: img, available:available ,price: price };
       });
       setAvailableItem(items);
-      console.log(items);
       setFilteredItems(items);
     });
   }, []);

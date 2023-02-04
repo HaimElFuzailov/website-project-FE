@@ -197,7 +197,7 @@ h1 {
 }
 
 @media only screen and (max-width: 720px) {
-  .cards__item {
+  .cards__items {
     display: flex;
     margin-bottom: 2rem;
   }
@@ -213,3 +213,105 @@ h1 {
 }
 
 
+@media only screen and (max-width: 400px) {
+  .content__blog__container {
+    width: 80%;
+    
+  }
+  .cards__item__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit:fill;
+    transition: all 0.2s linear;
+  }
+  .cards__item__pic-wrap {
+    position: relative;
+    width:183px;
+    height: 100%;
+    padding-top:80%;
+    overflow: hidden;
+  }
+  .cards__item {
+    display:inline-flex;
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+  }
+  .home-input {
+    padding: 2px 30px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    align-items:center;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+  }
+  
+  
+  .cards__item__img:hover {
+    transform: scale(1.1);
+  }
+  
+  .cards__item__info {
+    padding: 10px 25px 15px;
+  }
+  
+  .cards__item__text {
+    color: #252e48;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .btn-order{
+    background-color: black;
+    color: grey;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    position: relative;
+    right: 50px;
+    
+  }
+  .btn-favorite{
+    background-color: black;
+    color: grey;
+    padding: 6px 10px;
+    margin: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    position: relative;
+    right: 51.5px;
+   
+  }
+  .price{
+    color: black;
+    font-size: small;
+    border: solid black;
+    background-color: lightgray;
+    padding: 2px;
+    width: 40px;
+    position: relative;
+    left: 75%;
+     top: 32px; 
+  }
+  
+  .available{
+    color: black;
+    font-size: small;
+    background-color: gold;
+    padding: 3px;
+    width: 50px;
+    position: relative;
+     bottom: 132px; 
+  }
+}

@@ -14,7 +14,7 @@ export default function LogIn(props) {
   return (
     <>
       <h1 className="log-in">Log In</h1>
-
+      <div className="login-container">
       <br></br>
       <form className="login-form" onSubmit={handleSubmit}>
         <label htmlFor="username">Username: </label>
@@ -52,6 +52,7 @@ export default function LogIn(props) {
           </span>
         </p>
       </form>
+      </div>
     </>
   );
 }
