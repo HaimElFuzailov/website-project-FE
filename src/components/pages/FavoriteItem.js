@@ -22,11 +22,10 @@ export default function FavoriteItem() {
               <h2 className="checkout_titel">Favorite Items:</h2>
               {paket.map((item,index) => (
                 <CardFav
-                  key={item.id || index}
+                  key={`${item.id}_${index}`}
                   id={item.id}
                   title={item.title}
                   img={item.img}
-                  available={item.available}
                   price={item.price}
                 />
               ))}
